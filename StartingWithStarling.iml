@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="StartingWithStarlingDesk">
+    <configurations>
+      <configuration name="StartingWithStarlingDesk" target-platform="Desktop" pure-as="true" main-class="StartingWithStarling" output-file="StartingWithStarling.swf" output-folder="$MODULE_DIR$/out/production/StartingWithStarling">
+        <dependencies>
+          <entries>
+            <entry library-name="Starling" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="Hi-Res-Stats" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="TweenLite" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="AIRSDK_Compiler" />
+        </dependencies>
+        <compiler-options />
+        <packaging-air-desktop use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/StartingWithStarling-app.xml" package-file-name="StartingWithStarling" />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+      <configuration name="StartingWithStarlingWeb" pure-as="true" main-class="StartingWithStarling" output-file="StartingWithStarlingWeb.swf" output-folder="$MODULE_DIR$/out/production/StartingWithStarling">
+        <dependencies target-player="11.1">
+          <entries>
+            <entry library-name="Starling" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="Hi-Res-Stats" library-level="project">
+              <dependency linkage="External" />
+            </entry>
+            <entry library-name="TweenLite" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="4.6.0" />
+        </dependencies>
+        <compiler-options />
+        <packaging-air-desktop />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+      <configuration name="StartingWithStarlingMobile" target-platform="Mobile" pure-as="true" main-class="StartingWithStarling" output-file="StartingWithStarlingMobile.swf" output-folder="$MODULE_DIR$/out/production/StartingWithStarling">
+        <dependencies>
+          <entries>
+            <entry library-name="Hi-Res-Stats" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="Starling" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="TweenLite" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="AIRSDK_Compiler" />
+        </dependencies>
+        <compiler-options />
+        <packaging-air-desktop />
+        <packaging-android enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/StartingWithStarling-app.xml" package-file-name="StartingWithStarlingMobile" />
+        <packaging-ios package-file-name="StartingWithStarlingMobile" />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="AIRSDK_Compiler&#9;4.6.0" jdkType="__CompositeFlexSdk__" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="Starling" level="project" />
+    <orderEntry type="library" exported="" name="Hi-Res-Stats" level="project" />
+    <orderEntry type="library" exported="" name="TweenLite" level="project" />
+  </component>
+</module>
+
