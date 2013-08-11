@@ -16,7 +16,6 @@ import screens.Welcome;
 import starling.display.Sprite;
 import starling.events.Event;
 
-
 public class Game extends Sprite {
     private var screenWelcome:Welcome;
     private var screenInGame:InGame;
