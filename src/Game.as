@@ -10,7 +10,6 @@ package {
 import events.NavigationEvent;
 
 import screens.InGame;
-
 import screens.Welcome;
 
 import starling.display.Sprite;
@@ -41,7 +40,7 @@ public class Game extends Sprite {
 
     private function onChangeScreen(event:NavigationEvent):void {
         switch (event.params.id){
-            case "play":
+            case PAGEID.PLAY:
                 screenWelcome.disposeTemporarily();
                 screenInGame.initialize();
                 break;

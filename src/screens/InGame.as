@@ -13,7 +13,6 @@ import objects.Background;
 import objects.Hero;
 
 import starling.display.Button;
-
 import starling.display.Sprite;
 import starling.events.Event;
 

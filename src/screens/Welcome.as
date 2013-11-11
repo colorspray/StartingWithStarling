@@ -66,7 +66,7 @@ public class Welcome extends Sprite {
         hero.x = -hero.width;
         hero.y = 100;
 
-        TweenLite.to(hero, 2, {x:80});
+        TweenLite.to(hero, 3, {x:80});
 
         this.addEventListener(Event.ENTER_FRAME, heroAnimation);
     }
@@ -74,16 +74,17 @@ public class Welcome extends Sprite {
 
     private function heroAnimation(event:Event):void {
         var currentData:Date = new Date();
-        hero.y = 100 + (Math.cos(currentData.getTime() * 0.002) * 25);
-        playBtn.y = 260 + (Math.cos(currentData.getTime() * 0.002) * 10);
-        aboutBtn.y = 380 + (Math.cos(currentData.getTime() * 0.002) * 10);
+        var animationVariable:Number = Math.cos(currentData.getTime() * 0.002);
+        hero.y = 100 + (animationVariable * 25);
+        playBtn.y = 260 + (animationVariable * 10);
+        aboutBtn.y = 380 + (animationVariable * 10);
 
     }
 
     private function onMainMenuClick(event:Event):void {
         var buttonClicked:Button = event.target as Button;
         if (buttonClicked == playBtn){
-            this.dispatchEvent((new NavigationEvent(NavigationEvent.CHANGE_SCREEN, {id:"play"}, true)));
+            this.dispatchEvent((new NavigationEvent(NavigationEvent.CHANGE_SCREEN, {id: PAGEID.PLAY}, true)));
         }
     }
 

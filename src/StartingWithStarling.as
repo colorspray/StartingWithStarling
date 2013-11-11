@@ -1,9 +1,8 @@
 package {
 
 import flash.display.Sprite;
-import net.hires.debug.Stats;
 
-import screens.InGame;
+import net.hires.debug.Stats;
 
 import starling.core.Starling;
 
